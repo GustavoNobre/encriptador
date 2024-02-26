@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: inherit;
+    line-height: inherit;
+    list-style: none;
+    outline: none;
+    border: none;
+    color: inherit;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+}
+:root {
+    --White: #fff;
+    /* Dark Blue */
+    --DarkBlue100: #609ed4;
+    --DarkBlue200: #0a3871;
+    --DarkBlue300: #072b61;
+    --DarkBlue400: #052051;
+
+    /* Light Blue */
+    --LightBlue100: #f3f5fc;
+    --LightBlue200: #eff1fa;
+    --LightBlue300: #e9ecf8;
+    --LightBlue400: #aab2d5;
+    --LightBlue500: #757fb2;
+
+    /* Gray */
+    --Gray100: #ced4da;
+    --Gray200: #adb5bd;
+    --Gray300: #868e96;
+    --Gray400: #495057;
+    --Gray500: #343a40;   
+}
+body {
+    background-color: var(--LightBlue100);
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    height: 88vh;
+}
+
+.icon {
+    width: 5%;
+    height: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.entrada {
+    height: 75%;
+    width: 66%;
+    margin: 40px;
+    margin-top: 80px;
+}
+.aviso,
+.div-botoes {
+    display: flex;
+    margin: 1rem;
+    color: var(--Gray400);
+    font-size: 0.75rem;
+}
+textarea {
+    font-family: 'inter', sans-serif;
+    width: 50%;
+    height: 100%;
+    padding: 24px;
+    color: var(--DarkBlue200);
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    background-color: var(--LightBlue100);
+    resize: none;
+    outline: none;
+}
+.div-botoes {
+    display: flex;
+    justify-content: space-between;
+}
+.saida {
+    width: 33%;
+    height: 100%;
+    margin: 40px;
+    border-radius: 32px;
+    background-color: var(--White);
+    box-shadow: 0px 24px 32px -8px #00000014;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.saida-inicio {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.saida-fim {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.botao, .botao-copiar {
+    padding: 24px;
+    text-align: center;
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid var(--DarkBlue200);
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--DarkBlue200);
+    width: 40%;
+}
+.botao:hover, .botao-copiar:hover {
+    background-color: var(--DarkBlue200);
+    color: var(--White);
+}
+.botao {
+    width: 45%;
+}
+.botao-copiar {
+    width: 100%;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.saida img {
+    width: 100%;
+}
+.texto-saida {
+    width: 100%;
+    height: 85%;
+    font-size: 1.5rem;
+    resize: none;
+    background-color: var(--White);
+    outline: none;
+    border: none;
+    color: var(--Gray400);
+}
+.texto-saida:hover {
+    cursor: default;
+}
+@media (max-width:900px) {
+    h1 {
+        margin-bottom: 10px;
+    }
+
+.icon {
+    width: 30px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+body {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.entrada {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    height: 60%;
+}
+
+textarea {
+    height: 70%;
+}
+.botao {
+    width: 45%;
+}
+.saida {
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    margin: 0;
+    height: 100%;
+}
+.saida img {
+    display: none;
+}
+}
+@media (max-width: 400px) {
+    textarea {
+        height: 60%;
+    }
+    .botao{
+        width: 100%;
+    }
+    .div-botoes {
+        height: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+.saida {
+    padding: 10px;
+    justify-content: space-between;
+    height: 30%;
+}
+}

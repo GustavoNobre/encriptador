@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icone-encriptado.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="icon">
+        <img src="img/frame encriptado.png" alt="alura icon">
+    </header>
+<section class="entrada">
+    <textarea name="texto-entrada" id="texto-entrada" cols="30" rows="10" placeholder="Digite seu texto..."></textarea>
+    <div class="aviso">
+        <img src="img/Group.png" alt="!">
+        <p>Apenas letras Minúsculas e sem acento.</p>
+    </div>
+    <div class="div-botoes">
+        <a onclick="criptografar()" class="botao">Criptografar</a>
+        <a onclick="descriptografar()" class="botao">Descriptografar</a>
+    </div>
+</section>
+
+<section class="saida">
+    <div class="saida-inicio" id="saida-inicio">
+        <img src="img/cript.png" alt="boneco">
+        <h2>Nenhuma mensagem encontrada</h2>
+        <p>Digite um texto que voce deseja criptografar ou descriptografar.</p>
+    </div>
+    <div class="saida-fim" id="saida-fim">
+        <textarea name="texto-saida" id="texto-saida" class="texto-saida" readonly>teste</textarea>
+        <a onclick="copiarTexto()" class="botao-copiar">Copiar</a>
+    </div>
+</section>
+    <script src="app.js"></script>
+</body>
+</html>
